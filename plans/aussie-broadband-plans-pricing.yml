@@ -1,0 +1,57 @@
+name: Aussie Broadband pricing
+generated: '2026-10-22'
+method: searched
+source: https://www.aussiebroadband.com.au/internet/nbn-plans/
+audience: consumer
+pricing_basis: none
+published: true
+currency: AUD
+delivery:
+  delivery: managed
+note: >-
+  Retail residential nbn internet plan prices, not API pricing: Aussie Broadband publishes no developer API or API
+  pricing. Promo prices are for new and eligible upgrading customers, offer stated as ending 15/11/2026; page states
+  "All prices subject to change without notice." Prices read 2026-10-22.
+plan_count: 6
+plans:
+- name: Basic Plus 25/10
+  price: 58
+  price_text: $58 /month first 6 months*
+  billing_period: month
+  description: '$83/month after promo period. Designed for 1-2 people or devices.'
+  features: [No lock-in contract, Unlimited Data]
+  limits: ['Typical evening speed 23 Mbps down / 9 Mbps up']
+- name: Value 50/20
+  price: 70
+  price_text: $70 /month first 6 months*
+  billing_period: month
+  description: '$95/month after promo period. Designed for 2-3 people or devices.'
+  features: [No lock-in contract, Unlimited Data]
+  limits: ['Typical evening speed 47 Mbps down / 18 Mbps up']
+- name: Fast 100/20
+  price: 79
+  price_text: $79 /month first 6 months*
+  billing_period: month
+  description: '$99/month after promo period. Designed for 5-6 people or devices.'
+  features: [No lock-in contract, Unlimited Data]
+  limits: ['Typical evening speed 94 Mbps down / 18 Mbps up']
+- name: Fast Fibre 500/50
+  price: 79
+  price_text: $79 /month first 6 months*
+  billing_period: month
+  description: '$99/month after promo period.'
+  features: [No lock-in contract, Unlimited Data]
+  limits: []
+- name: Ultrafast Fibre 1000/100
+  price: 129
+  price_text: $129 /month
+  billing_period: month
+  features: [No lock-in contract, Unlimited Data]
+  limits: []
+- name: Hyperfast 2000/200
+  price: 189
+  price_text: $189 /month
+  billing_period: month
+  description: Designed for 30+ people or devices. FTTP only.
+  features: [No lock-in contract, Unlimited Data]
+  limits: ['Typical evening speed 1810 Mbps down / 178 Mbps up']

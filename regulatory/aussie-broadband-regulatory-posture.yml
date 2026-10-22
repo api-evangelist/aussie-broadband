@@ -1,0 +1,84 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+notes: >-
+  Read from the Aussie Broadband Privacy and Credit Reporting Policy ("last updated in January 2025"),
+  fetched 2026-10-22 (HTTP 200). The Terms of Use (HTTP 200) only point to the privacy policy, and the
+  accessibility page (https://www.aussiebroadband.com.au/accessibility/, HTTP 200) lists support options but
+  makes no WCAG or other conformance claim, so no accessibility_conformance signal is recorded. The policy
+  states no retention period, names no individual subprocessors, makes no AI statement and does not mention
+  Global Privacy Control, so nothing is recorded for those signals.
+signals:
+  data_subject_request:
+    url: https://www.aussiebroadband.com.au/legal/privacy-policy/
+    section: Your Rights - to access and correct your personal information
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (www.oaic.gov.au)
+    evidence:
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You may request access to any personal information we hold about you at any time by contacting us on
+        the details set out in the 'How to Contact Us' section below. We will provide access to that
+        information in accordance with the Privacy Act, subject to any exemptions that may apply.
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you believe that personal information we hold about you is incorrect, incomplete or inaccurate,
+        then you may also request us to correct and amend it by contacting us on the details set out in the
+        'How to Contact Us' section below.
+    note: >-
+      Access and correction rights under the Australian Privacy Act, exercised by contacting the company. No
+      deletion or portability right is named and no response deadline is stated; an administration fee may
+      apply "in limited circumstances".
+  data_residency:
+    url: https://www.aussiebroadband.com.au/legal/privacy-policy/
+    section: Do we disclose your personal information overseas?
+    regions_named: [New Zealand, United States, Singapore, Malaysia, India, Philippines]
+    evidence:
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We use service providers located in New Zealand, the United States (including in California),
+        Singapore, Malaysia, India and the Philippines, which are each subject to laws that apply to the
+        protection of personal information in their respective locations.
+    note: >-
+      This is a disclosure of overseas transfer, not a data-residency commitment. Personal information may
+      leave Australia for these six countries, with only "reasonable steps" promised for how overseas
+      recipients handle it.
+  subprocessors:
+    url: https://www.aussiebroadband.com.au/legal/privacy-policy/
+    section: Do we share your personal information with third parties?
+    evidence:
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We may need to share your personal information with third parties in connection with the purposes
+        described in this Privacy and Credit Reporting Policy. This may include disclosing your personal
+        information to the following types of third parties:
+    note: >-
+      Only categories of recipients are given (employees, contractors, third party service providers, credit
+      reporting bodies, potential acquirers). No named subprocessor list is published. To ask about a
+      specific overseas transfer, the policy says to contact the company.
+  incident_notification:
+    url: https://www.aussiebroadband.com.au/legal/privacy-policy/
+    section: Network, Security and Fraud Protection
+    evidence:
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: secure our networks, and inform you of any network security or data breach issues; and
+    - source: https://www.aussiebroadband.com.au/legal/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Please notify us immediately if you know or reasonably suspect that your personal information has
+        been subject to any data breach, breach of security or other unauthorised activity.
+    note: >-
+      Telling customers about breaches appears only as one of the purposes for using personal information.
+      There is no notification timeframe and no commitment to a procedure. The second clause asks customers
+      to report suspected breaches to the company.

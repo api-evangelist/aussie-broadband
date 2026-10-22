@@ -1,0 +1,12 @@
+generated: '2026-10-22'
+method: none
+source: https://pypi.org/pypi/pyaussiebb/json
+note: 'no first-party package: every candidate a model listed was unowned (harvest-packages.py --audit)'
+packages: []
+rejected:
+- name: pyaussiebb
+  registry: pypi
+  reason: 'official: false as written'
+- name: aussiebb
+  registry: pypi
+  reason: 'official: false as written'

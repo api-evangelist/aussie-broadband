@@ -1,0 +1,137 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 8
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - identity
+  - other
+  - source
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: assets.aussiebroadband.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: aussiebroadband.com.au
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: carbon.aussiebroadband.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Portal
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: my.aussiebroadband.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Login
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: identity
+  relation: own
+- host: myphone.aussiebroadband.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: resources.aussiebroadband.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: webmail.aussiebroadband.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aussiebroadband.com.au
+  role: other
+  relation: own
+- host: www.aussiebroadband.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Website
+  - Blog
+  - HelpCenter
+  - Support
+  - Pricing
+  - StatusPage
+  - TermsOfService
+  - PrivacyPolicy
+  - AboutUs
+  - Leadership
+  - Careers
+  - InvestorRelations
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: aussiebroadband.com.au
+  role: website
+  relation: own

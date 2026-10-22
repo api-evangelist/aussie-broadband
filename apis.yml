@@ -1,23 +1,121 @@
 aid: aussie-broadband
+
 name: Aussie Broadband
-description: 'Aussie Broadband is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Aussie Broadband is an Australian telecommunications provider, founded in 2003 in regional Victoria, selling award-winning
+  nbn and Opticomm internet, mobile SIM plans, hosted phone and network services to homes, businesses and enterprises. It also runs
+  a wholesale division and Carbon, its self-service business and wholesale portal for qualification, ordering, billing, support and
+  its on-net Aussie Fibre ethernet service. No public developer API or API documentation was found on its site.
+
 url: https://raw.githubusercontent.com/api-evangelist/aussie-broadband/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Telecommunications
+- Internet Service Provider
+- Broadband
+- nbn
+- Mobile
+- Wholesale
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://assets.aussiebroadband.com.au/web/images/misc/abb-og-image.png
+
 common:
+- type: IntegrationEdges
+  url: integrations/aussie-broadband-integration-edges.yml
+- type: Plans
+  url: plans/aussie-broadband-plans-pricing.yml
+- type: SecurityTxt
+  url: well-known/aussie-broadband-security.txt
+- type: SecurityTxt
+  url: well-known/aussie-broadband-aussiebroadband-security.txt
+- type: WellKnown
+  url: well-known/aussie-broadband-well-known.yml
+- type: Hosts
+  url: hosts/aussie-broadband-hosts.yml
+- type: Vendors
+  url: vendors/aussie-broadband-vendors.yml
+- type: Security
+  url: https://www.aussiebroadband.com.au/enterprise/security/
+- type: VulnerabilityDisclosure
+  url: security/aussie-broadband-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/aussie-broadband-domain-security.yml
 - type: Website
-  url: https://aussiebroadband.com.au/
+  url: https://www.aussiebroadband.com.au/
+- type: Blog
+  url: https://www.aussiebroadband.com.au/blog/
+- type: HelpCenter
+  url: https://www.aussiebroadband.com.au/help-centre/
+- type: Support
+  url: https://www.aussiebroadband.com.au/contact/
+- type: Pricing
+  url: https://www.aussiebroadband.com.au/internet/nbn-plans/
+- type: Login
+  url: https://my.aussiebroadband.com.au/
+- type: Portal
+  url: https://carbon.aussiebroadband.com.au/
+- type: StatusPage
+  url: https://www.aussiebroadband.com.au/network/outages/
+- type: GitHubOrganization
+  url: https://github.com/aussiebroadband
+- type: TermsOfService
+  url: https://www.aussiebroadband.com.au/legal/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.aussiebroadband.com.au/legal/privacy-policy/
+- type: AboutUs
+  url: https://www.aussiebroadband.com.au/about-us/
+- type: Leadership
+  url: https://www.aussiebroadband.com.au/about-us/leadership/
+- type: Careers
+  url: https://www.aussiebroadband.com.au/careers/
+- type: InvestorRelations
+  url: https://www.aussiebroadband.com.au/investor-centre/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website, link-property pointers and GitHub org verified by fetch on 2026-10-22; no public developer API/docs found. wrapper.aussiebroadband.com.au/api
+    seen only in a site JS bundle (observed, not called). my.aussiebroadband.com.au returns 403 JS challenge to crawlers (login page
+    exists, not dead).
+  evidence:
+  - url: https://aussiebroadband.com.au/
+    status: 200
+  - url: https://www.aussiebroadband.com.au/
+    status: 200
+  - url: https://github.com/aussiebroadband
+    status: 200
+  - url: https://carbon.aussiebroadband.com.au/
+    status: 200
+  - url: https://www.aussiebroadband.com.au/network/outages/
+    status: 200
+  - url: https://my.aussiebroadband.com.au/
+    status: 403
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

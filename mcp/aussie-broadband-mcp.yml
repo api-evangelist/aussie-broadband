@@ -1,0 +1,32 @@
+name: Aussie Broadband MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+source:
+- https://my.aussiebroadband.com.au/mcp
+- https://glama.ai/mcp/servers/j5y9mevggx
+- https://mcpmarket.com/server/aussie-broadband-blade
+description: >-
+  No official MCP server from Aussie Broadband was found. The company also publishes no
+  OpenAPI or developer documentation, so we cannot derive a candidate tool list.
+  The pre-flight probe got a 403 from https://my.aussiebroadband.com.au/mcp, and its
+  control path also returned 403. That host challenges every request before routing
+  (verdict: opaque), so the 403 does not show that an MCP endpoint exists.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+x-community-servers:
+  note: >-
+    Search turned up third-party community servers. Their own listings say they are
+    not affiliated with Aussie Broadband and that they call the undocumented MyAussie
+    customer-portal API. They are not provider surfaces and are listed here for context only.
+  servers:
+  - name: aussiebb-mcp
+    url: https://glama.ai/mcp/servers/j5y9mevggx
+    official: false
+  - name: Aussie Broadband Blade
+    url: https://mcpmarket.com/server/aussie-broadband-blade
+    official: false

@@ -1,0 +1,9 @@
+name: Aussie Broadband rate limits
+generated: '2026-10-22'
+method: none
+limit_count: 0
+note: >-
+  No public developer API or API documentation exists, so no rate limits are published. Checked the website, the Carbon
+  portal host and the GitHub org (github.com/aussiebroadband). The community pyaussiebb library notes the portal API can
+  rate-limit clients, but publishes no figure, and it is not provider documentation.
+limits: []

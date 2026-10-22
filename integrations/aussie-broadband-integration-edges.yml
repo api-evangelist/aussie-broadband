@@ -1,0 +1,29 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.home-assistant.io/integrations/aussie_broadband/
+- https://zapier.com/apps/aussie-broadband/integrations
+- https://n8n.io/integrations/aussie-broadband/
+- https://composio.dev/toolkits/aussie-broadband
+- https://monid.ai/tools/aussie-broadband
+checked:
+- https://zapier.com/apps/aussie-broadband/integrations
+- https://www.make.com/en/integrations/aussie-broadband
+- https://n8n.io/integrations/aussie-broadband/
+- https://www.home-assistant.io/integrations/aussie_broadband/
+- https://github.com/aussiebroadband
+- https://composio.dev/toolkits/aussie-broadband
+- https://monid.ai/tools/aussie-broadband
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: Home Assistant
+  partner: null
+  type: marketplace
+  marketplace: home-assistant
+  direction: third-party
+  channel: community
+  evidence: https://www.home-assistant.io/integrations/aussie_broadband/
+  note: Home Assistant core integration that shows service usage metrics from the Aussie Broadband (MyAussie) customer
+    API through the community pyaussiebb library; it requires a My Aussie Broadband account.
+templates: []
